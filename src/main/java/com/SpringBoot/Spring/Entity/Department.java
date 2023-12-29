@@ -22,6 +22,10 @@ public class Department {
 
     }
 
+
+    public Department() {
+    }
+    
     public Long getDepartmentID() {
         return this.departmentID;
     }
