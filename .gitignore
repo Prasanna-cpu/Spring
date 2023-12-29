@@ -33,3 +33,9 @@ build/
 .vscode/
 
 src/main/java/com/SpringBoot/Spring/Controller/HelloController.java
+
+
+
+src/main/resources/application.properties
+sample.json
+src/main/resources/application.properties

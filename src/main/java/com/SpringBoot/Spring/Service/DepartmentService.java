@@ -1,6 +1,6 @@
 package com.SpringBoot.Spring.Service;
 
-import org.hibernate.mapping.List;
+import java.util.Optional;
 
 import com.SpringBoot.Spring.Entity.Department;
 
@@ -10,7 +10,7 @@ public interface DepartmentService {
 
     public java.util.List<Department> FetchDepartmentList();
 
-    public Department FetchDepartmentByID(Long departmentId);
+    public Optional<Department> FetchDepartmentByID(Long departmentId);
 
     public void DeleteDepartmentByID(Long departmentId);
 
