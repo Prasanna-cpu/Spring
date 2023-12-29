@@ -1,9 +1,12 @@
 package com.SpringBoot.Spring.Entity;
 
+import org.hibernate.validator.constraints.Length;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity 
 public class Department {
@@ -11,7 +14,10 @@ public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long departmentID;
-    private String departmentName,departmentAddress,departmentCode;
+    @NotBlank(message = "Add Department Name")
+    private String departmentName;
+    private String departmentAddress;
+    private String departmentCode;
 
     public Department(Long departmentID,String departmentName,String departmentAddress,String departmentCode){
 
